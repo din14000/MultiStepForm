@@ -13,8 +13,6 @@ export default function Buttons() {
     const [nextButtonType, setNextButtonType]  = useState<"submit" | "reset" | "button" | undefined>("submit");
     
     const next = () => {
-       
-        console.log("IN BUTTONS - before - substep: " + detailsSubStep + " step: " + formStep)
         if (formStep === 3) {
             dispatch(clearDetails());
             dispatch(resetSteps());
@@ -26,8 +24,6 @@ export default function Buttons() {
         else {
             setNextButtonType("submit");
         }
-        console.log("IN BUTTONS - after - substep: " + detailsSubStep + " step: " + formStep)
-
     }
 
     return (
