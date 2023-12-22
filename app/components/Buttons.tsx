@@ -1,4 +1,4 @@
-import { Button, PressEvent } from "react-aria-components";
+import { Button } from "react-aria-components";
 import "./Buttons.css";
 import { decrementStep, decrementSubStep, incrementStep, resetSteps, useStepsAppSelector } from "@/redux/features/steps-slice";
 import { useDispatch } from "react-redux";
@@ -10,7 +10,7 @@ export default function Buttons() {
     const { formStep, detailsSubStep } = useStepsAppSelector((state) => state.stepsReducer.value)
     const back = () => formStep === 1 ? dispatch(decrementSubStep()) : dispatch(decrementStep());
 
-    const  [nextButtonType, setNextButtonType]  = useState("submit");
+    const [nextButtonType, setNextButtonType]  = useState<"submit" | "reset" | "button" | undefined>("submit");
     
     const next = () => {
        

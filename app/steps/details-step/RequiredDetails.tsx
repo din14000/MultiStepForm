@@ -30,7 +30,7 @@ export default function RequiredDetails({ register, errors }: {
                         />
                         <Button slot="increment">+</Button>
                     </Group>
-                    <Text className='text-xs leading-4 text-right' slot="description">סכום מינימלי: 10,000 ש"ח</Text>
+                    <Text className='text-xs leading-4 text-right' slot="description">סכום מינימלי: 10,000 ש&#34;ח</Text>
                     <FieldError className='block text-red-500 text-sm leading-5 mt-2 text-right'>{errors.loanAmount?.message}</FieldError>
                 </NumberField>
             </div>

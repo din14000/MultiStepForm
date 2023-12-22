@@ -1,6 +1,6 @@
 import { RadioOption } from "@/app/components/RadioOption";
 import { detailsState, useDetailsAppSelector } from "@/redux/features/details-slice";
-import { RadioGroup, Label, FieldError, Button } from "react-aria-components";
+import { RadioGroup, Label, FieldError } from "react-aria-components";
 import { detailsDataObject } from "./detailsUtils/DetailsUtils";
 import { useStepsAppSelector } from "@/redux/features/steps-slice";
 import { UseFormRegister, FieldErrors } from "react-hook-form";
@@ -30,7 +30,7 @@ export default function DetailsSubStep({ register, errors }: {
                     return (
                         <div key={data.detailsSubStep}>
                             {data.selectionOptions.map((selectionOption) => (
-                                <div className="details-substep rounded-5 px-40 py-20 justify-center">
+                                <div key={selectionOption.name} className="details-substep rounded-5 px-40 py-20 justify-center">
                                     <RadioGroup
                                         isRequired
                                         name={selectionOption.name}
@@ -40,7 +40,7 @@ export default function DetailsSubStep({ register, errors }: {
                                         className="flex flex-col gap-1"
                                     >
                                         <Label className="mt-6 mb-4 font-bold text-base leading-5 text-right font-assistant">{selectionOption.label}</Label>
-                                        <div className="flex flex-row gap-1">
+                                        <div key={selectionOption.name} className="flex flex-row gap-1">
                                             {selectionOption.value.map((value) => (
                                                 <RadioOption key={value} register={register} name={selectionOption.name} value={value} />
                                             ))}

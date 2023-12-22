@@ -3,11 +3,9 @@ import { Radio } from 'react-aria-components';
 import { UseFormRegister } from 'react-hook-form';
 import "./RadioOption.css"
 
-                                                                // TODO - change 'any'
-export function RadioOption({ value, name, register, id }: { value: string, name: any, register: UseFormRegister<detailsState> }) {
+export function RadioOption({ value, name, register }: { value: string, name: any, register: UseFormRegister<detailsState> }) {
     return (
       <Radio 
-      id={id}
       key={name}
         value={value}
         {...register(name)}

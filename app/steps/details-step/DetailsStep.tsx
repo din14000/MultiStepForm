@@ -11,7 +11,7 @@ import Loader from '@/app/components/Loader';
 
 export default function DetailsStep() {
     const dispatch = useDispatch()
-    const { formStep, detailsSubStep } = useStepsAppSelector((state) => state.stepsReducer.value)
+    const { detailsSubStep } = useStepsAppSelector((state) => state.stepsReducer.value)
     const { paymentMethod, loanAmount, numberOfPayments, dateToPay } = useDetailsAppSelector((state) => state.detailsReducer.value)
 
     const { register, handleSubmit, formState: { errors } } = useForm<detailsState>({
