@@ -1,4 +1,4 @@
-{
+export const detailsData = {
   "detailsData": [
     {
       "detailsSubStep": 1,
