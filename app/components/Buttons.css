@@ -1,0 +1,23 @@
+.next-button {
+    background: #2D72E1;
+    width: 209px;
+    height: 2.5rem;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 15%;
+    left: 30%;
+    color: white;
+    font-family: assistant;
+  }
+  
+  .back-button {
+    background: #EBF2FF;
+    width: 70px;
+    height: 2.5rem;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 15%;
+    right: 30%;
+    color: #2D72E1;
+    font-family: assistant;
+  }

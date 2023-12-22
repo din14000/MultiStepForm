@@ -1,0 +1,11 @@
+.w-44 {
+    
+    background-color: #F6F9FF;
+    border: #E0EAFA solid 1px;
+
+    
+}
+.w-44:hover, .w-44[data-selected] {
+    background-color: #EBF2FF;
+    border: #2D72E1 solid 1px;
+  } 

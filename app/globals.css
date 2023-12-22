@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --gradient-background: linear-gradient(231deg, rgba(110, 166, 253, 1) 0%, rgba(18, 108, 249, 1) 99%, rgba(255, 255, 255, 1) 100%);
+}
+
+ *{
+  font-family: 'Assistant', sans-serif; 
+}
+
+form {
+  width: 40%;
+}

@@ -1,0 +1,33 @@
+ul {
+    display: flex;
+    width: 51rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul>li {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 95px;
+    background-color: #EBF2FF;
+    border-radius: 12px;
+    padding: 18px 26px;
+    margin: 12px;
+}
+
+h1 {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.value {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.name {
+    color: #5D5D67;
+    font-size: 16px;
+    font-weight: bold;
+}

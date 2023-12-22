@@ -1,0 +1,45 @@
+.step-item {
+  @apply relative flex flex-col justify-center items-center w-36;
+}
+
+.step-item:not(:last-child):before {
+  content: '';
+  background-color: slategray;
+  position: absolute;
+  height: 3px;
+  width: 33%;
+  right: 85%;
+  top: 33%;
+  transform: translateY(-8px);
+}
+
+.step {
+  @apply w-8 h-8 flex items-center justify-center z-10 relative bg-gray-300 rounded-full font-semibold text-black;
+}
+
+.active .step {
+  @apply text-white;
+  background: var(--gradient-background);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 2px #FFFFFF,
+    0 0 0 12px #E0EAFA;
+}
+
+.active>.text-gray-500 {
+  font-weight: bold
+}
+
+.complete .step {
+  @apply bg-green-600;
+}
+
+.complete:not(:last-child):before {
+  @apply bg-green-600;
+
+}
+
+.active:not(:last-child):before {
+  background: var(--gradient-background);
+  width: calc(var(--substep) * 33%);
+}
