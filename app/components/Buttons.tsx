@@ -42,7 +42,7 @@ export default function Buttons() {
                     })()}
                 </Button>
             </div>
-            {detailsSubStep > 1 && <div>
+            {(detailsSubStep > 1 && formStep < 3) && <div>
                 <Button onPress={back} className='back-button'>חזור</Button>
             </div>}
         </>
